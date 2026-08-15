@@ -44,7 +44,6 @@ CREATE TABLE enrollment(
     foreign key (course_id) references course(course_id)
 );
 
--- Attempt 2 (Failed: missing CHAR data type)
 create table enrollment(
     roll_no int,
     course_id int,
@@ -55,7 +54,6 @@ create table enrollment(
     foreign key (course_id) references course(course_id)
 );
 
--- Attempt 3 (Failed: ERROR 1824 - Table 'student' does not exist)
 create table enrollment(
     roll_no int,
     course_id int,
@@ -86,13 +84,11 @@ create table student(
     foreign key (dept_id) references department(dept_id)
 );
 
--- Attempt 3 (Failed: Typo "show table")
+
 show table;
 
--- Attempt 4 (Success)
 show tables;
 
--- Create Enrollment Table (Success)
 create table enrollment(
     roll_no int,
     course_id int,
@@ -104,16 +100,15 @@ create table enrollment(
 );
 insert into department values (1, 'computer science'), (2, 'Electronics');
 
--- Insert first student record
 insert into student values (101, 'ajinkya', 'ajinkya@gmail', '6546564645', 1);
 
--- Insert second student record (retried after broken multiline quote string error)
+
 insert into student values (102, 'shivtej', 'shivtej@gmail.com', 513248534, 2);
 
--- Insert values into course table
+
 insert into course values (501, 'DBMS', 1), (502, 'circuits', 2);
 
--- Insert values into enrollment table
+
 insert into enrollment values (101, 501, 3, 'A');
 
 insert into enrollment values (101, 502, 3, 'B');
