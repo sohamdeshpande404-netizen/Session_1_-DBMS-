@@ -103,7 +103,7 @@ insert into department values (1, 'computer science'), (2, 'Electronics');
 insert into student values (101, 'ajinkya', 'ajinkya@gmail', '6546564645', 1);
 
 
-insert into student values (102, 'shivtej', 'shivtej@gmail.com', 513248534, 2);
+insert into student values (102, 'soham', 'sohamj@gmail.com', 513248534, 2);
 
 
 insert into course values (501, 'DBMS', 1), (502, 'circuits', 2);
