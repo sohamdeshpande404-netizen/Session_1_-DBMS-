@@ -4,13 +4,13 @@ A SQL script setup for initializing and populating the `Communique` student orga
 
 ---
 
-## 📌 Overview
+##  Overview
 
 This directory contains the database definition and initial data population script for the **Communique** table, designed to store member identifiers, full names, and organizational designations.
 
 ---
 
-## 🛠️ Database Schema
+##  Database Schema
 
 ### Entity: `Communique`
 
@@ -22,7 +22,7 @@ This directory contains the database definition and initial data population scri
 
 ---
 
-## 🚀 Getting Started
+##  Getting Started
 
 ### Prerequisites
 
